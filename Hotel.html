@@ -21,7 +21,7 @@
                 <div class="dropdown-content">
                     <a href="Hotel.html">HOTEL</a>
                     <a href="Transport.html">TRANSPORT</a>
-                    <a href="Photograper.html">PHOTOGRAPHER</a>
+                    <a href="Photographer.html">PHOTOGRAPHER</a>
                 </div>
             </div>
     
@@ -32,13 +32,13 @@
                 <div class="dropdown-content">
                     <a href="Northern.html">NORTHERN</a>
                     <a href="north centrl.html">NORTH CENTRAL</a>
-                    <a href="north western.html">NORTH WESTERN</a>
+                    <a href="northwestern.html">NORTH WESTERN</a>
                     <a href="sabragamuwa.html">SABRAGAMUWA</a>
                     <a href="uva.html">UVA</a>
-                    <a href="western .html">WESTERN</a>
-                    <a href="sourthrn.html">SOUTHERN</a>
+                    <a href="western.html">WESTERN</a>
+                    <a href="southern.html">SOUTHERN</a>
                     <a href="central.html">CENTRAL</a>
-                    <a href="easterrn.html">EASTERN</a>
+                    <a href="eastern.html">EASTERN</a>
                 </div>
             </div>
     
@@ -53,7 +53,7 @@
             </div>
     
             <a href="Payment.html">PAYMENT</a>
-            <a href="Feed Back.html">FEEDBACK</a>
+            <a href="Feedback.html">FEEDBACK</a>
 
         </nav>
     </header>  
@@ -61,32 +61,50 @@
   <div>
       <img src="https://images.jdmagicbox.com/comp/def_content/hotel-reservations/hotel-6-hotels-6-mbjrv-hotel-reservations-3-x4zz9.jpg?clr=#442244" alt="travelling">
   </div>
-
   <form action="PHP File/Hotel.php" method="post" >
-      <br><br>
+    <br><br><br><br>
       <div class="form-group">
+        <label for="Select_id">Select a hotel id:</label><br>
+        <select id="hotel_id" name="hotel_id">
+            <option value="1">Hotel1</option>
+            <option value="2">Hotel2</option>
+            <option value="3">Hotel3</option>
+            <option value="4">Hotel4</option>
+            <option value="5">Hotel5</option>
+            <option value="6">Hotel6</option>
+            <option value="7">Hotel7</option>
+            <option value="8">Hotel8</option>
+            <option value="9">Hotel9</option>
+            <option value="10">Hotel10</option>
+            <option value="11">Hotel11</option>
+            <option value="12">Hotel12</option>
+            <option value="13">Hotel13</option>
+            <option value="14">Hotel14</option>
+            <option value="15">Hotel15</option>
+        </select><br>
+        <br>
           <label for="hotel">Select a hotel:</label><br>
           <select id="hotel" name="hotel">
-            <option value="hotel1">NorthGate jaffna</option>
-        <option value="hotel2">Nallur Holidays Inn</option>
-        <option value="hotel3">Tilko City </option>
-        <option value="hotel4">EKHO Lake House</option>
-        <option value="hotel5">Cinnamon Grand Colombo</option>
-        <option value="hotel6">The Kingsbury </option>
-        <option value="hotel7">Club Palm Bay</option>
-        <option value="hotel8">Gall Face Hotel</option>
-        <option value="hotel9">Fairway Colombo </option>
-        <option value="hotel10">Galadari Hotel</option>
-        <option value="hotel11">Ramada Colombo</option>
-        <option value="hotel12">Green Palace </option>
-        <option value="hotel3">Hotel East Lagon</option>
-        <option value="hotel4">Riviera Resort</option>
-        <option value="hotel5">Pharo Lake </option>
+            <option value="NorthGate jaffna">NorthGate jaffna</option>
+            <option value="Nallur Holidays Inn">Nallur Holidays Inn</option>
+            <option value="Tilko City">Tilko City </option>
+            <option value="EKHO Lake House">EKHO Lake House</option>
+            <option value="Cinnamon Grand Colombo">Cinnamon Grand Colombo</option>
+            <option value="The Kingsbury">The Kingsbury </option>
+            <option value="Club Palm Bay">Club Palm Bay</option>
+            <option value="Gall Face Hotel">Gall Face Hotel</option>
+            <option value="Fairway Colombo">Fairway Colombo </option>
+            <option value="Galadari Hotel">Galadari Hotel</option>
+            <option value="Ramada Colombo">Ramada Colombo</option>
+            <option value="Green Palace">Green Palace </option>
+            <option value="Hotel East Lagon">Hotel East Lagon</option>
+            <option value="Riviera Resort">Riviera Resort</option>
+            <option value="Pharo Lake ">Pharo Lake </option>
           </select><br>
       </div>
       <div class="form-group">
-          <label for="roomType">Select a room type:</label><br>
-          <select id="roomType" name="roomType">
+          <label for="room_type">Select a room type:</label><br>
+          <select id="room_type" name="room_type">
             <option value="standard">Standard</option>
             <option value="deluxe">Deluxe</option>
             <option value="suite">Suite</option>
@@ -94,17 +112,16 @@
       </div>
       <div class="form-group">
           <label for="checkin">Check-in date:</label><br>
-          <input type="date" id="checkin" name="checkin"><br>
+          <input type="date" id="checkin" name="Check_in_date">
       </div>
       <div class="form-group">
           <label for="checkout">Check-out date:</label><br>
-          <input type="date" id="checkout" name="checkout"><br>
+          <input type="date" id="checkout" name="Check_out_date">
       </div>
-      <div class="form-group">
-          <input type="submit" value="Book" id="butt">
+      <div class="form-group"> 
+          <input type="submit" value="Book" id="butt"><br>
       </div>
 
   </form>
 </body>
-
 </html>
